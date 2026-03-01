@@ -1,0 +1,13 @@
+MsgGo est un outil SMS en lot léger et moderne pour Android. Conçu avec Material Design 3, il vous permet d'importer des données à partir de feuilles de calcul Excel et d'utiliser des modèles personnalisés pour une distribution de messages efficace et personnalisée.
+
+<b>Fonctionnalités</b>
+<ul>
+<li><b>Import Excel</b>: Prend en charge l'importation de listes de contacts à partir de fichiers .xls et .xlsx.</li>
+<li><b>Variables magiques</b>: Détecte automatiquement les en-têtes et supporte l'insertion de variables (par exemple, "${Nom}") dans les modèles de message pour un envoi en lot personnalisé.</li>
+<li><b>Support multi-SIM</b>: Entièrement compatible avec les appareils multi-SIM ; choisissez quelle carte SIM utiliser.</li>
+<li><b>Suivi de la progression</b>: Consultez la progression d'envoi et l'état de livraison en temps réel.</li>
+<li><b>Gestion de l'historique</b>: Enregistre automatiquement les dossiers d'envoi et les modèles pour une réutilisation facile.</li>
+<li><b>Confidentialité d'abord</b>: Pas d'autorisation INTERNET requise ; toutes les données sont traitées localement.</li>
+<li><b>Mécanisme de délai</b>: Supporte les délais d'envoi aléatoires pour réduire le risque d'être bloqué par les opérateurs.</li>
+<li><b>Design moderne</b>: Suit les directives de Material Design 3.</li>
+</ul>

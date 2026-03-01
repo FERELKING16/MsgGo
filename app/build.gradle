@@ -10,8 +10,8 @@ android {
         versionCode 26000311
         versionName "3.8.6"
         testInstrumentationRunner "androidx.test.runner.AndroidJUnitRunner"
-        // only package these resource configurations; exclude fr for now because aapt2 has trouble flattening French values
-        resConfigs "en", "zh"
+        // package these resource configurations
+        resConfigs "en", "zh", "fr"
 //        buildConfigField "long", "BUILD_TIME", "${System.currentTimeMillis()}L"
 //        multiDexEnabled true
     }
