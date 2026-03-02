@@ -24,7 +24,7 @@ jobs:
         run: chmod +x gradlew
 
       - name: Build with Gradle
-        run: ./gradlew assembleRelease
+        run: ./gradlew assembleRelease bundleRelease
 
       - name: Inspect build outputs
         run: |
@@ -34,6 +34,12 @@ jobs:
           ls -al app/build/outputs/bundle/release || echo "(none)"
           echo "=== Full tree for diagnostics ==="
           find app/build/outputs -maxdepth 3 -type f | sed 's|^|  |'
+
+          # Check APK generation
+          if [ ! -d "app/build/outputs/apk/release" ] || [ -z "$(find app/build/outputs/apk/release -name '*.apk' 2>/dev/null)" ]; then
+            echo "ERROR: No APK files generated!"
+            exit 1
+          fi
 
       - name: Sign APK
         uses: r0adkll/sign-android-release@v1
